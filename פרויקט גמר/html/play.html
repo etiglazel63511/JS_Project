@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סיימון | Simon</title>
+    <script defer src="../js/play.js"></script>
+    <link rel="stylesheet" href="../css/play.css">
+</head>
+
+<body>
+    <div class="main">
+        <img class="background" src="../img/רקע סיימון משחק1.jpg">
+        <button class="start bb">התחל משחק</button>
+        <button class="loby bb">חזרה לעמוד ראשי</button>
+        <button class="log_out bb">יציאה</button>
+        <div class="box">
+            <div class="button">
+                <div class="orange a"><img src="../img/A.png"></div>
+                <div class="green a"> <img src="../img/b.png"></div>
+                <div class="red a"> <img src="../img/C.png"></div>
+                <div class="blue a"> <img src="../img/d.png"></div>
+            </div>
+            <audio id="error" src="../audio/error.mp3"></audio>
+            <audio id="good" src="../audio/good.mp3"></audio>
+            <audio id="b" src="../audio/b.WAV"></audio>
+        </div>
+        <div class="game_over">
+            <img src="../img/gameover.jpg">
+            <button class="try ttt">נסה שוב</button>
+        </div>
+        <div class="win">
+            <img src="../img/win.jpg">
+            <button class="agein ttt">שחק שוב</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+        <footer>
+            אתי גליזל ודינה קלריסטנפלד 2025 Ⓒ
+        </footer>
+</body>
+
+</html>

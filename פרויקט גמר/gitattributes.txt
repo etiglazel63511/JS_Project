@@ -1,0 +1,8 @@
+# הגדרת תיקיית ה-CSS כתיקיית עזר כדי שלא תשפיע על חישוב השפה
+css/* linguist-vendored
+
+# הגדרת תיקיית ה-JS כתיקייה העיקרית לזיהוי
+js/* linguist-detectable=true
+
+# התעלמות מקבצי וורד בחישוב השפות
+*.docx linguist-documentation

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/רקע סיימון משחק1.jpg') no-repeat center center fixed;
+    background-size: cover;
+	  position: sticky;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.button{
+    height: 30vh;
+    width: 60vw;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.a{
+    border-radius: 50%;
+}
+
+.a img{
+    width: 27vw;
+    padding: 2%;
+}
+
+.background{
+    position: relative;
+    z-index: 1;
+}
+
+.box{
+    position: absolute;
+    z-index: 2;
+    top: 35vh;
+    left: 22vw;
+}
+
+.bb {
+    position: absolute;
+    z-index: 2;
+    height: 2em; 
+    width: 150px; 
+    font-size: 1.5em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 0.3s ease; 
+    text-align: center;
+    line-height: 2em; 
+    background-color: transparent; 
+    padding: 0 15px; 
+}
+
+.start {
+    top: 5vh; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 250px; 
+    height: 70px; 
+    font-size: 2.2em; 
+    line-height: 70px; 
+    background-color: Green;
+    color: white; 
+    border: 3px solid rgb(0, 114, 47); 
+    border-radius: 15px; 
+}
+
+.start:hover {
+    background-color: rgb(255, 165, 0); 
+    color: white; 
+    border-color: rgb(255, 165, 0); 
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); 
+}
+
+.start:active {
+    background-color: rgb(200, 100, 0);
+    color: white;
+    border-color: rgb(200, 100, 0);
+    box-shadow: 0 0 10px rgba(200, 100, 0, 0.9); 
+    transform: translateX(-50%) scale(0.98); 
+}
+
+.loby {
+    top: 75vh;
+    left: 2vw;
+    width: 150px; 
+    height: 80px; 
+    font-size: 1.1em;
+    line-height: 40px;
+    background-color: Green;
+    color: white; 
+    border: 3px solid rgb(0, 114, 47); 
+    border-radius: 8px; 
+}
+
+.loby:hover {
+    background-color: rgb(255, 165, 0);
+    color: white; 
+    border-color: rgb(255, 165, 0); 
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+.loby:active {
+    background-color: rgb(200, 100, 0); 
+    color: white;
+    border-color: rgb(200, 100, 0);
+    box-shadow: 0 0 7px rgba(200, 100, 0, 0.9);
+    transform: scale(0.98);
+}
+
+.log_out {
+    top: 88vh; 
+    left: 2vw;
+    width: 150px; 
+    height: 40px; 
+    font-size: 1.1em;
+    line-height: 40px; 
+    background-color: Green;
+    color: white; 
+    border: 3px solid rgb(0, 114, 47); 
+    border-radius: 8px; 
+}
+
+.log_out:hover {
+    background-color: rgb(255, 165, 0); 
+    color: white; 
+    border-color: rgb(255, 165, 0); 
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7); 
+}
+
+.log_out:active {
+    background-color: rgb(200, 100, 0);
+    color: white;
+    border-color: rgb(200, 100, 0);
+    box-shadow: 0 0 7px rgba(200, 100, 0, 0.9);
+    transform: scale(0.98);
+}
+
+.game_over,
+.win {
+    display: none; 
+    position: absolute;
+    z-index: 3;
+    top: 50%;        
+    left: 50%;       
+    transform: translate(-50%, -50%); 
+    width: 80vw; 
+    max-width: 500px; 
+    height: auto; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    color: white;
+    text-align: center; 
+}
+
+.game_over img,
+.win img {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+}
+
+.game_over button,
+.win button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.game_over button:hover,
+.win button:hover {
+    background-color: #45a049;
+}
+
+.hh2{
+    position: absolute;
+    z-index: 4;
+    top: 56vh;
+    left: 50vw; 
+    font-size: 5em;
+}
+.ttt{
+    height: 2em;
+    width: 150px;
+    font-size: 1.5em;
+    background-color: rgb(21, 21, 131);
+    color: white;
+    border: none;
+    border-radius: 10%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    background-color: seethrow;
+    color: #ffd700; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width:768px){
+    .button{
+        width:300px;
+        height: 300px;
+    }
+    .a img{
+        width: 140px;
+    }
+    .box{
+        top: 33vh;
+        left: 33vw;
+    }
+}
+@media screen and (min-width:1024px){
+    .button{
+        width:25vw;
+    }
+    .a img{
+        width: 10vw;
+    }
+    
+    .background{
+        width: 100vw;
+    }
+    .box{
+        top: 34vh;
+        left: 38vw;
+    }
+}
